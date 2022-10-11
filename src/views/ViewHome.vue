@@ -1,35 +1,41 @@
 <template>
   <div id="homeContainer">
-    <div id="iceContainer" class="iceContainer" :class="{ animationCube: disabled }" >
+    <div
+      id="iceContainer"
+      class="iceContainer"
+      :class="{ animationCube: disabled }"
+    >
       <IceHome />
     </div>
     <Bubbles />
     <div class="welcomediv">
       <div id="mainDivWelcome">
-      <h1 class="welcome__mainTitle h1Home">
-       Pop'n'Bubble
-      </h1>
-      <h2 id="welcome__detailsTitle" class="h2Home">Le paradis du bubble tea !</h2>
-      <div class="logoArrowsDiv">
-      <div class="arrows">     
-         <span>&#92;</span>
-       <span>&#8260;</span> </div>
+        <h1 class="welcome__mainTitle h1Home">Pop'n'Bubble</h1>
+        <h2 id="welcome__detailsTitle" class="h2Home">
+          Le paradis du bubble tea !
+        </h2>
+        <div class="logoArrowsDiv">
+          <div class="arrows">
+            <span>&#92;</span>
+            <span>&#8260;</span>
+          </div>
 
-      <RouterLink to="/about">
-      
-        <img
-          alt="logo"
-          class="logo"
-          src="@/assets/imgs/logoPnbPng.png"
-          width="150"
-          height="170"
-        />
-      
-      </RouterLink>  
-      <div class="arrows">
-      <span>&#8260;</span>
-      <span>&#92;</span></div>
-    </div></div></div>
+          <RouterLink to="/about">
+            <img
+              alt="logo"
+              class="logo"
+              src="@/assets/imgs/logoPnbPng.png"
+              width="150"
+              height="170"
+            />
+          </RouterLink>
+          <div class="arrows">
+            <span>&#8260;</span>
+            <span>&#92;</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,7 +45,7 @@ import Bubbles from "@/components/Bubbles.vue";
 import IceHome from "@/components/IceHome.vue";
 export default {
   name: "Home",
-  components: { Bubbles, IceHome},
+  components: { Bubbles, IceHome },
   data() {
     return {
       disabled: false,
@@ -59,9 +65,9 @@ export default {
 </script>
 
 <style scoped>
- .iceContainer {
+.iceContainer {
   display: none;
- }
+}
 body {
   overflow: hidden;
 }
@@ -77,10 +83,10 @@ body {
 }
 @keyframes drop3 {
   10% {
-    transform: translateY(4vh); 
+    transform: translateY(4vh);
   }
   50% {
-    transform: translateY(6vh); 
+    transform: translateY(6vh);
   }
   100% {
     transform: translateY(4vh);
@@ -119,7 +125,6 @@ body {
   }
 }
 
-
 .logo:hover {
   transform: scale(1.1);
 }
@@ -129,41 +134,41 @@ body {
 .arrows {
   font-size: 3rem;
   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .logoArrowsDiv {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
-@media screen and (max-width: 1024px){
-/* ----------HOME--------- */
-#mainDivWelcome {
+@media screen and (max-width: 1024px) {
+  /* ----------HOME--------- */
+  #mainDivWelcome {
     margin: 26rem 3rem 0;
     word-wrap: break-word;
-}
-#aboutContainer {
-        /* margin: 0 40%; */
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
   }
-  @media screen and (max-width: 768px){
-    .h1Home {
+  #aboutContainer {
+    /* margin: 0 40%; */
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h1Home {
     font-size: 7rem;
-}
-.h2Home {
-    font-size: 2.5rem;
-}
-#navBar__container {
-    gap: 10rem;
-}
-.navbar__link {
-    padding: 2rem;
-}
   }
+  .h2Home {
+    font-size: 2.5rem;
+  }
+  #navBar__container {
+    gap: 10rem;
+  }
+  .navbar__link {
+    padding: 2rem;
+  }
+}
 </style>

@@ -2,24 +2,23 @@
   <header>
     <Lines />
     <nav id="navBar">
-      
       <div id="navBar__container">
         <IceCube />
-       
-      <div class="wrap4">
+
+        <div class="wrap4">
           <div class="cube">
             <div class="front4 cubeface">
-              
-        <div id="imgContainer"><router-link to="/">
-          <img
-            alt="logo"
-            class="logo"
-            src="@/assets/imgs/logoPnbPng.png"
-            width="100"
-            height="120"
-          />
-      </router-link>
-        </div>
+              <div id="imgContainer">
+                <router-link to="/">
+                  <img
+                    alt="logo"
+                    class="logo"
+                    src="@/assets/imgs/logoPnbPng.png"
+                    width="100"
+                    height="120"
+                  />
+                </router-link>
+              </div>
             </div>
             <div class="back4 cubeface"></div>
             <div class="top4 cubeface"></div>
@@ -86,7 +85,7 @@
         <div class="wrap5 wrapTarget">
           <div class="cube">
             <div class="front5 cubeface">
-              <MiniCart/>
+              <MiniCart />
             </div>
             <div class="back5 cubeface"></div>
             <div class="top5 cubeface"></div>
@@ -126,8 +125,7 @@ header {
 }
 #navBar__container {
   display: flex;
-   flex-wrap: wrap;
-    
+  flex-wrap: wrap;
 }
 .navbar__link {
   padding: 5rem;
@@ -143,22 +141,22 @@ header {
 #teaImg {
   width: 3rem;
 }
-@media screen and (max-width: 1024px){
-#navBar {
+@media screen and (max-width: 1024px) {
+  #navBar {
     height: 14rem;
     margin: 0 5rem;
-}
-#navBar__container {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 4rem;
-    }
-    #navBar__container {
+  }
+  #navBar__container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4rem;
+  }
+  #navBar__container {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .navbar__link {
+    padding: 2rem;
+  }
 }
-.navbar__link {
-  padding: 2rem;
-}
-    }
 </style>

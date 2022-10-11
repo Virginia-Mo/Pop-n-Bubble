@@ -143,7 +143,14 @@ export default {
     };
   },
   computed: {
-    ...mapState(datasStore, ["nom", "prenom", "email", "message", "date", "time"])
+    ...mapState(datasStore, [
+      "nom",
+      "prenom",
+      "email",
+      "message",
+      "date",
+      "time",
+    ]),
   },
   methods: {
     toggleModal() {
@@ -260,8 +267,8 @@ export default {
 #timediv {
   display: flex;
 }
-@media screen and (max-width: 1024px){
-  #subTitle{
+@media screen and (max-width: 1024px) {
+  #subTitle {
     font-size: 3rem;
   }
   .mainContainer {
@@ -271,12 +278,13 @@ export default {
   }
   .formMessage__container {
     width: 100%;
+  }
+  .h1title {
+    font-size: 5rem;
+  }
+  iframe {
+    max-width: 85%;
+    margin: 2rem;
+  }
 }
-.h1title{
-  font-size: 5rem;
-}
-iframe{
-  max-width: 85%;
-  margin: 2rem;
-}}
 </style>

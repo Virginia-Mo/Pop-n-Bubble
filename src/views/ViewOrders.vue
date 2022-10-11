@@ -222,10 +222,10 @@ export default {
       picked: "",
       choosedPearl: "",
       choosedFormat: "",
-      choosedTemperature:"",
-      sugarRate:" ",
-      fruit:"",
-      flavor:""
+      choosedTemperature: "",
+      sugarRate: " ",
+      fruit: "",
+      flavor: "",
     };
   },
   async created() {
@@ -323,32 +323,33 @@ export default {
   height: 7rem;
   width: 5rem;
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
   .formContainer {
-   flex-direction: column;
+    flex-direction: column;
     padding: 0 0;
     border: none;
-    box-shadow: none;} 
-    .h1order {
+    box-shadow: none;
+  }
+  .h1order {
     word-break: break-word;
     font-size: 6rem;
-}
-/* .menucontainer {
+  }
+  /* .menucontainer {
     margin-top: 11rem;
 } */
 
-#formOrder {
+  #formOrder {
     width: 100%;
-}
-.formTitles {
+  }
+  .formTitles {
     font-size: 2rem;
+  }
+  .cartContainer {
+    width: 112%;
+  }
+  #bubbletea__img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-.cartContainer {
-  width: 112%;
-}
-#bubbletea__img {
-  max-width: 100%;
-  height: auto;
-}}
-
 </style>

@@ -14,9 +14,7 @@
 
 <script>
 export default {
-  name: "Bubbles", 
+  name: "Bubbles",
 };
 </script>
-<style>
-
-</style>
+<style></style>

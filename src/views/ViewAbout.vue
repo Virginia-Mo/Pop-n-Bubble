@@ -60,14 +60,13 @@
                 deserunt amet hic exercitationem soluta laudantium?
               </p>
             </div>
-            
-              <img
+
+            <img
               class="descriptionImg"
-                src="@/assets/imgs/shop.jpg"
-                alt="photo de la boutique"
-                id="imgDescription"
-              />
-            
+              src="@/assets/imgs/shop.jpg"
+              alt="photo de la boutique"
+              id="imgDescription"
+            />
           </div>
         </div>
       </div>
@@ -88,7 +87,6 @@ export default {
 </script>
 
 <style scoped>
-
 #imgDescriptionContainer {
   width: 160rem;
 }
@@ -118,30 +116,32 @@ export default {
   border: solid 1px #9e9e9e;
   border-radius: 10px;
 }
-@media screen and (max-width: 1024px){
-/* ----------HOME--------- */
-#aboutContainer {
-font-size: 1.6rem;
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .detailsDiv {
-        flex-direction: column;
-        align-items:center ;
-    }
+@media screen and (max-width: 1024px) {
+  /* ----------HOME--------- */
+  #aboutContainer {
+    font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  @media screen and (max-width: 768px){
-    .descriptionImg, #imgDescription{
+  .detailsDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .descriptionImg,
+  #imgDescription {
     max-width: 100%;
-}
-#mainTitle {
+  }
+  #mainTitle {
     font-size: 4rem;
+  }
+  .formTitles {
+    overflow: inherit;
+  }
 }
-.formTitles {
-  overflow: inherit;
-}}
 </style>

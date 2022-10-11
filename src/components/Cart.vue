@@ -24,12 +24,18 @@
             @click="cancel(name)"
           />
         </p>
-        <p class="order__listP"><span class="orderSpan"> Thé :</span> {{ item[2] }}</p>
-        <p class="order__listP"><span class="orderSpan"> Saveur :</span> {{ item[3] }}</p>
+        <p class="order__listP">
+          <span class="orderSpan"> Thé :</span> {{ item[2] }}
+        </p>
+        <p class="order__listP">
+          <span class="orderSpan"> Saveur :</span> {{ item[3] }}
+        </p>
         <p class="order__listP">
           <span class="orderSpan">{{ item[4] }} :</span> {{ item[5] }}
         </p>
-        <p class="order__listP"><span class="orderSpan">Sucré à :</span> {{ item[6] }}%</p>
+        <p class="order__listP">
+          <span class="orderSpan">Sucré à :</span> {{ item[6] }}%
+        </p>
         <p class="orderSpan order__listP">Servit {{ item[7].toLowerCase() }}</p>
       </div>
     </ul>
@@ -100,7 +106,14 @@ export default {
   },
   computed: {
     ...mapState(useStore, ["cart", "total"]),
-    ...mapState(datasStore, ["nom", "prenom", "email", "message", "date", "time"])
+    ...mapState(datasStore, [
+      "nom",
+      "prenom",
+      "email",
+      "message",
+      "date",
+      "time",
+    ]),
   },
   methods: {
     ...mapActions(useStore, { cancel: "cancel" }),
@@ -152,7 +165,7 @@ export default {
 .orderTitle {
   text-decoration: underline;
   font-size: 2.5rem;
-  margin: 0 0 0.5rem
+  margin: 0 0 0.5rem;
 }
 .order__listP {
   margin: 0.2rem;
@@ -219,12 +232,12 @@ h2 {
   font-size: 1.7rem;
   font-family: inherit;
 }
-.OrderLink,.OrderLink:visited{
+.OrderLink,
+.OrderLink:visited {
   text-decoration: none;
   color: black;
 }
 .pInfos {
   font-size: 2.3rem;
 }
-
 </style>
