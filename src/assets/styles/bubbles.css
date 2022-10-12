@@ -269,6 +269,10 @@
   #Bubble1, #Bubble19, #Bubble18,#Bubble20,#Bubble21,#Bubble22,#Bubble23,#Bubble24,#Bubble25,#Bubble26,#Bubble27,#Bubble28,#Bubble29,#Bubble30,#Bubble31,#Bubble32,#Bubble33,#Bubble34,#Bubble35,#Bubble36,#Bubble37,#Bubble38{
     display: none;
 }
+.ball::after {
+  top: 103%;
+  left: 88%;
+}
 .ball {
 width: 5rem;
 height: 5rem;
@@ -277,4 +281,13 @@ top: 4rem;
 .ball::after {
 top: 158%;
 left: 123%;
-}}
+}
+}
+@media screen and (max-width: 550px){
+  .ball {
+    top: 3rem;
+}
+.Pearls3, .Pearls5, .Pearls7,.Pearls9,.Pearls11,.Pearls13,.Pearls15,.Pearls17,.Pearls19,.Pearls21,.Pearls23,.Pearls25,.Pearls27,.Pearls29,.Pearls31,.Pearls33,.Pearls35,.Pearls37{
+  display: none;
+}
+}

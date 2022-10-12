@@ -169,7 +169,11 @@ export default {
   },
   methods: {
     addclass() {
+      if (window.innerWidth < 1024) { 
+    this.disabled  = false
+  } else {
       this.disabled = true;
+  }
     },
     showContentMain() {
       this.addclass();

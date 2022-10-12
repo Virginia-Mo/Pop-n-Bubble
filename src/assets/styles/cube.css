@@ -184,14 +184,23 @@
 }
 
 @media screen and (max-width:1180px){
-	.iceCube {
+.iceCube {
 		   display: none;
 		 
 	   }
-   .iceHome {display: none;}
+.iceHome {display: none;
+}
    }
 
 @media screen and (max-width: 768px){
-	.cube {
+.cube {
 		width: 7rem;
 	}}
+@media screen and (max-width: 550px){
+.cube div {
+			width: 8.5rem;
+			height: 10.5rem;
+		}
+#mainDivWelcome {
+			margin: 20rem 3rem 0;
+		}}

@@ -150,8 +150,6 @@ export default {
   data() {
     return {
       src : "",
-      url :`${import.meta.env.VITE_BASE_URL}uploads/`,
-      imgFormat : ".jpg",
       urlimg : '../assets/imgs/',
       open: false,
       isActive: false,
@@ -333,5 +331,9 @@ margin: 3rem auto auto ;
       }
       #topContainer__description {
     font-size: 1.4rem;
-}}
+  }
+    .h1menu {
+font-size: 6rem;
+    }
+}
 </style>

@@ -334,10 +334,6 @@ export default {
     word-break: break-word;
     font-size: 6rem;
   }
-  /* .menucontainer {
-    margin-top: 11rem;
-} */
-
   #formOrder {
     width: 100%;
   }
@@ -351,5 +347,13 @@ export default {
     max-width: 100%;
     height: auto;
   }
+@media screen and (max-width: 550px) { 
+  .h1order {
+    font-size: 4.5rem;
+  }
+  .h3order {
+font-size: 3.5rem;
+  }
+}
 }
 </style>

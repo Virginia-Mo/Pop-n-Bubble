@@ -141,6 +141,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (max-width: 1024px) {
   /* ----------HOME--------- */
   #mainDivWelcome {
@@ -170,5 +171,17 @@ body {
   .navbar__link {
     padding: 2rem;
   }
+}
+@media screen and (max-width: 550px) {
+  .h1Home {
+    font-size: 4.5rem;
+  }
+  .h2Home {
+    font-size: 2.5rem;
+}
+.logo {
+  width: 12rem;
+  height: 13rem;
+}
 }
 </style>
