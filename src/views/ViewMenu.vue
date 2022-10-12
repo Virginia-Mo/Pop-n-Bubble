@@ -22,7 +22,7 @@
             <h3 class="h3menu">{{ tea.attributes.Title }}</h3>
         <div id="topContainer">
         <div id="topContainer__img">
-        <img :src="url+tea.attributes.Photo.data.attributes.formats.small.hash+imgFormat" 
+        <img :src="tea.attributes.Photo.data.attributes.formats.small.url" 
         alt="Top Ventes Bubble Tea" 
         class="imgTopTeas" @click="toggleModal($event)"/></div>
         <div id="topContainer__description">
@@ -150,7 +150,7 @@ export default {
   data() {
     return {
       src : "",
-      url :`${import.meta.env.VITE_URL_SIMPLE}uploads/`,
+      url :`${import.meta.env.VITE_BASE_URL}uploads/`,
       imgFormat : ".jpg",
       urlimg : '../assets/imgs/',
       open: false,
