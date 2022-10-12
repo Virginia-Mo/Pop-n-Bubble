@@ -159,4 +159,9 @@ header {
     padding: 2rem;
   }
 }
+@media screen and (max-width: 550px){
+  .navbar__link {
+    word-break: break-word;
+  }
+}
 </style>
