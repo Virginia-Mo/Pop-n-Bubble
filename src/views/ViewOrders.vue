@@ -241,7 +241,7 @@ export default {
         this.flavor.attributes.Name,
         this.choosedPearl,
         this.fruit.attributes.Name,
-        this.sugarRate.attributes.Name,
+        this.sugarRate.attributes.Rate,
         this.choosedTemperature.replace("d", "d \n"),
       ];
       this.cart.push(formData);
