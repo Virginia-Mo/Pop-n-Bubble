@@ -144,6 +144,9 @@
             alt="Icone snapchat"
         /></a>
       </div>
+      <div id="Copy">
+        <router-link class="footer__links" to="/copyrights">Copyrights</router-link>
+      </div>
     </div>
   </footer>
   <div id="PearlsContainer__footer"><Pearls /></div>

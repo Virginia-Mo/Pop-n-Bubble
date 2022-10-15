@@ -35,6 +35,11 @@ const router = createRouter({
       component: () => import("../views/ViewContact.vue"),
     },
     {
+      path: "/copyrights",
+      name: "CopyRights",
+      component: () => import("../views/Copyrights.vue"),
+    },
+    {
       path: "/error",
       name: "ErrorPage",
       component: () => import("../views/NotFound.vue"),
