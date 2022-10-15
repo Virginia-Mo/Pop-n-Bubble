@@ -1,4 +1,5 @@
 <template>
+    <NavBar/>
     <div id="CopyrightsContainer">
         <h1 id="mainTitle">Copyrights</h1>
         <ul>
@@ -33,7 +34,10 @@
     </div>
 </template>
 <script>
+import NavBar from "../components/NavBar.vue";
+
 export default {
     name: "CopyRights",
-  };
+    components: { NavBar }
+};
 </script>
