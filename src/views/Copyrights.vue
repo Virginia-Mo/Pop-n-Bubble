@@ -31,13 +31,16 @@
 <li><a href="https://www.freepik.com/free-vector/happy-cute-cartoon-barista-serving-bubble-milk-tea-drinks-character-art-illustration_24107498.htm#query=bubble%20tea&position=40&from_view=search">Image by felicities</a> on Freepik</li>
 <li>Logo : <a href="https://www.freepng.fr/png-4sljzj/">Freepng</a></li>
 <li><a href="https://www.freepng.fr/png-qizos2/">Photo click'n'collect</a></li>
-    </div>
+
+    <FooterComponent />
+        </div>
 </template>
+
 <script>
 import NavBar from "../components/NavBar.vue";
-
+import FooterComponent from "../components/Footer.vue";
 export default {
     name: "CopyRights",
-    components: { NavBar }
+    components: { NavBar,FooterComponent }
 };
 </script>
