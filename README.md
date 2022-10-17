@@ -9,4 +9,3 @@ For this project I used the following techs :
 You can see the result here : 
 [Pop'n'Bubble](https://popnbubble.netlify.app/)
 
-![PnBLogo](public/uploads/logoPnbPng%20(1).png)
