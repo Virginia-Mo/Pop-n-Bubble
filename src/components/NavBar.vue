@@ -131,6 +131,7 @@ header {
   padding: 5rem;
   text-decoration: none;
   font-size: 2rem;
+  color: black
 }
 .navbar__link:visited {
   color: black;

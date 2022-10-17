@@ -134,5 +134,6 @@ export default {
 <style>
 #CopyrightsList {
   text-align: left;
+  font-size: 2rem;
 }
 </style>
