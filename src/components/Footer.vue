@@ -149,7 +149,7 @@
     
 
   </footer>  
-    <div class="footer__containers" id="footer__linksContainer">
+    <div id="footer__linksContainer">
         <router-link class="footer__links" to="/copyrights">Copyrights</router-link>
       </div>
   <div id="PearlsContainer__footer"><Pearls /></div>
