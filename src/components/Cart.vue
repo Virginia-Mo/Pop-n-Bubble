@@ -93,7 +93,6 @@
 
 <script>
 import { useStore } from "@/stores/cart.js";
-import { datasStore } from "@/stores/datasStore.js";
 import { mapActions, mapState } from "pinia";
 const storeCart = useStore();
 

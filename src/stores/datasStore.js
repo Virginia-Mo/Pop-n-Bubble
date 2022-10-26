@@ -17,12 +17,6 @@ export const datasStore = defineStore("datasStore", {
     sweetness: " ",
     Size: "",
     Rate: "",
-    nom: " ",
-    prenom: " ",
-    email: " ",
-    message: " ",
-    date: "",
-    time: "",
   }),
   actions: {
     async handleDatas() {

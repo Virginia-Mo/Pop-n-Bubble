@@ -130,8 +130,7 @@
 import NavBar from "../components/NavBar.vue";
 import FooterComponent from "../components/Footer.vue";
 import Modal from "../components/Modal.vue";
-import { datasStore } from "@/stores/datasStore.js";
-import { mapState } from "pinia";
+
 export default {
   name: "ContactPage",
   components: { NavBar, FooterComponent, Modal },
@@ -140,17 +139,11 @@ export default {
       open: false,
       isActive: false,
       background: false,
+      nom: " ",
+      prenom: " ",
+      email: " ",
+      message: " ",
     };
-  },
-  computed: {
-    ...mapState(datasStore, [
-      "nom",
-      "prenom",
-      "email",
-      "message",
-      "date",
-      "time",
-    ]),
   },
   methods: {
     toggleModal() {
@@ -159,18 +152,6 @@ export default {
       this.background = !this.background;
       this.submitForm();
     },
-    // openModal() {
-    //   this.open = true;
-    //   this.isActive = true;
-    //   document.querySelector("#app").style.backgroundColor = "#808080c4";
-    //   document.querySelector("h1").style.backgroundColor = "#808080c4";
-    //
-    // },
-    // closeModal() {
-    //   this.open = false;
-    //   document.querySelector("#app").style.backgroundColor = "";
-    //   document.querySelector("h1").style.backgroundColor = "bisque";
-    // },
 
     async submitForm() {
       this.open == true;
