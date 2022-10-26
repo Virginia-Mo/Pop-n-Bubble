@@ -102,22 +102,20 @@ export default {
   data() {
     return {
       order: storeCart.cart,
-      nom :" " ,
-      prenom :" " ,
-      email :" " ,
-      date :" " ,
-      time :" " ,
+      nom :" ",
+      prenom :" ",
+      email :" ",
+      date :" ",
+      time :" ",
     };
   },
   computed: {
     ...mapState(useStore, ["cart", "total"]),
-   
   },
   methods: {
     ...mapActions(useStore, { cancel: "cancel" }),
     async submitForm() {
       this.order = this.order.toString().replaceAll(/,/gi, " + ");
-      console.log(this.time)
       let payload = {
         data: {
           order: this.order,
