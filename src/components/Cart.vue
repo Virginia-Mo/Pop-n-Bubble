@@ -78,7 +78,7 @@
           type="email"
           id="email"
           class="infosClient"
-          name="emil"
+          name="email"
           v-model="email"
           required
         />
@@ -102,23 +102,22 @@ export default {
   data() {
     return {
       order: storeCart.cart,
+      nom :" " ,
+      prenom :" " ,
+      email :" " ,
+      date :" " ,
+      time :" " ,
     };
   },
   computed: {
     ...mapState(useStore, ["cart", "total"]),
-    ...mapState(datasStore, [
-      "nom",
-      "prenom",
-      "email",
-      "message",
-      "date",
-      "time",
-    ]),
+   
   },
   methods: {
     ...mapActions(useStore, { cancel: "cancel" }),
     async submitForm() {
       this.order = this.order.toString().replaceAll(/,/gi, " + ");
+      console.log(this.time)
       let payload = {
         data: {
           order: this.order,
@@ -128,6 +127,7 @@ export default {
           time: this.time,
         },
       };
+      console.log(payload)
       const submission = await fetch(
         `${import.meta.env.VITE_BASE_URL}/orders`,
         {
